@@ -1,0 +1,36 @@
+GET http://localhost:3000/jobs
+
+###
+POST http://localhost:3000/jobs
+Content-Type: application/json
+
+{
+      "title": "UI Designer",
+      "description": "A senior UI/UX designer",
+      "stack": "Figma",
+      "pay": 190000,
+      "type": "Full-time",
+      "location": "Germany"
+}
+
+###
+GET http://localhost:3000/jobs/5ee58348e469bf3cd01ed1e7
+
+###
+DELETE http://localhost:3000/jobs/5ee7e7e4b0d5b928d0b7cd8e
+
+###
+PATCH http://localhost:3000/jobs/5ee6a9cbb105d9372c84ee5e
+Content-Type: application/json
+
+{
+    "createdAt": "2020-06-14T22:40:04.804Z",
+    "_id": "5ee6a9cbb105d9372c84ee5e",
+    "title": "Backend Developer",
+    "description": "An experienced nodejs developer",
+    "stack": "Nodejs",
+    "pay": 300000,
+    "type": "remote",
+    "location": "Germany",
+    "__v": 0
+}
